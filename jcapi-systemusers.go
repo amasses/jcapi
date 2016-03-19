@@ -23,6 +23,7 @@ type JCUser struct {
 	Uid                 string `json:"unix_uid"`
 	Gid                 string `json:"unix_guid"`
 	EnableManagedUid    bool   `json:"enable_managed_uid"`
+	PasswordlessSudo    bool   `json:"passwordless_sudo"`
 
 	TagIds []string `json:"tags,omitempty"` // the list of tag IDs that this user should be put in
 
